@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+    app:titleTextColor="@android:color/white"
+    android:minHeight="?attr/actionBarSize">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/basspromenuicon"
+            android:layout_alignParentLeft="true"/>
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:text="Basspro Application"
+            android:textColor="@android:color/white"/>
+        <ImageView
+            android:id="@+id/scanner"
+            android:layout_toRightOf="@+id/title"
+            android:layout_toLeftOf="@+id/searchmenu"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/scannericon"
+            />
+        <ImageView
+            android:id="@+id/searchmenu"
+            android:layout_alignParentRight="true"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/search"/>
+    </RelativeLayout>
+</android.support.v7.widget.Toolbar>
